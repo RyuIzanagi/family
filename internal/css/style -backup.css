@@ -23,7 +23,6 @@ a {
 /* -------------------------------- */
 /* ----- LANGUAGE SELECT ----- */
 /* -------------------------------- */
-/* Layout */
 .language-row {
     display: flex;
     flex-wrap: wrap;
@@ -44,48 +43,31 @@ a {
 }
 
 .language-container {
+    background-color: #fff;
     padding: 10px 40px;
     padding-top: 20px;
-    animation: moveInBottom 1s ease-out 1.5s backwards;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px #838383a8;
+    animation: moveInBottom 1s ease-out;
 }
 
-/* Image */
 .language-container img {
     width: 100px;
-    transition: all 0.3s;
-
 }
-
-.language-container img:hover,
-.language-container img:active {
-    transform: scale(1.1);
-
-}
-
-/* Links and texts */
 
 .language-container p {
     text-align: center;
-    color: #515150;
-    padding-top: 15px;
-    text-transform: uppercase;
-    font-size: 0.8rem;
 }
-
-
 
 .language {
     position: absolute;
-    animation: moveInLang 1s ease-out 0.5s;
-    animation-fill-mode: backwards;
+    animation: moveInLang 1s ease-out;
     top: 35%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #373737;
-    font-weight: 700;
     text-transform: uppercase;
+    color: #e7e7e7;
     letter-spacing: 7px;
-    word-spacing: 5px;
     font-size: 3rem;
     padding-bottom: 30px;
 
@@ -109,7 +91,7 @@ a {
 
 /* Background image */
 .heading {
-    background: #ffc048;
+    background: linear-gradient(to right bottom, #79d276, #57b054);
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -120,7 +102,7 @@ a {
 h1 {
     font-size: 10rem;
     text-transform: uppercase;
-    color: #373737;
+    color: #e7e7e7;
     letter-spacing: 35px;
     font-weight: 700;
     animation-name: moveInTop;
@@ -166,53 +148,23 @@ h1 {
 
 
 /* Animation */
-/* Language Animation */
+/* Header Animation */
+
+
 
 @keyframes moveInLang {
     0% {
         opacity: 0;
-        -webkit-transform: translate(-50%, -80%);
-        -moz-transform: translate(-50%, -80%);
-        -ms-transform: translate(-50%, -80%);
-        -o-transform: translate(-50%, -80%);
-        transform: translate(-50%, -80%);
+        transform: translate(-50%, -70%);
     }
 
     100% {
         opacity: 1;
-        -webkit-transform: translate(-50%, -50%);
-        -moz-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        -o-transform: translate(-50%, -50%);
         transform: translate(-50%, -50%);
     }
 }
 
-/* Header Animation */
-
 /* Button Animation */
-
-
-@keyframes moveInTop {
-    0% {
-        -webkit-transform: translateY(-200px);
-        -moz-transform: translateY(-200px);
-        -ms-transform: translateY(-200px);
-        -o-transform: translateY(-200px);
-        transform: translateY(-200px);
-        opacity: 0;
-    }
-
-    100% {
-        -webkit-transform: translateY(0);
-        -moz-transform: translateY(0);
-        -ms-transform: translateY(0);
-        -o-transform: translateY(0);
-        transform: translateY(0);
-        opacity: 1;
-    }
-}
-
 @keyframes moveInBottom {
     0% {
         -webkit-transform: translateY(200px);
@@ -240,48 +192,6 @@ h1 {
 /* Iphone */
 
 @media screen and (max-width: 600px) {
-
-    /* Language select */
-    .language-column {
-        flex: 100%;
-        padding: 1rem;
-    }
-
-    .language-row {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        flex-direction: column;
-
-    }
-
-    .language-container {
-        padding: 0px 5px;
-        max-width: 100%;
-    }
-
-    .language-container p {
-        font-size: 0.7rem;
-        display: inline-block;
-        padding-left: 1rem;
-    }
-
-    .language-container img {
-        width: 60px;
-        vertical-align: middle;
-    }
-
-    .indexpage {
-        position: relative;
-    }
-
-    .language {
-        font-size: 2rem;
-        top: 25%;
-    }
-
-    /* Welcome page */
     h1 {
         font-size: 7rem;
         text-align: center;
@@ -297,42 +207,6 @@ h1 {
 
 /* Portrait Tablets, large phones */
 @media screen and (min-width: 600px) and (max-width: 1024px) {
-
-    /* Language select */
-    .language-column {
-        flex: 33%;
-        padding: 1rem;
-    }
-
-    .language-row {
-        position: absolute;
-        top: 60%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
-
-    .language-container {
-        padding: 0px 5px;
-        max-width: 100%;
-    }
-
-    .language-container p {
-        font-size: 0.7rem;
-    }
-
-    .language-container img {
-        width: 80px;
-
-    }
-
-    .indexpage {
-        position: relative;
-    }
-
-    /* Welcome page */
-
-
     h1 {
         font-size: 10rem;
         text-align: center;
@@ -346,59 +220,6 @@ h1 {
         box-shadow: 0px 5px 10px rgba(91, 91, 91, 0.4);
 
     }
-
-}
-
-/* Landscape Phones */
-
-@media screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
-
-    /* Language select */
-
-    .indexpage {
-        position: relative;
-    }
-
-    .language-column {
-        flex: 33%;
-        padding: 1rem;
-    }
-
-    .language-row {
-        position: absolute;
-        top: 70%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-    }
-
-    .language-container {
-        padding: 0px 5px;
-        max-width: 100%;
-    }
-
-    .language-container p {
-        font-size: 0.7rem;
-    }
-
-    .language-container img {
-        width: 80px;
-
-    }
-
-    .language {
-        font-size: 2rem;
-    }
-
-    /* Welcome page */
-    .header-container {
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        text-align: center;
-    }
-
 }
 
 /* Landscape Tablets */
