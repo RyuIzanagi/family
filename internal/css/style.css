@@ -6,6 +6,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+
 }
 
 body {
@@ -105,6 +106,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
+
 }
 
 /* Background image */
@@ -195,11 +197,11 @@ h1 {
 
 @keyframes moveInTop {
     0% {
-        -webkit-transform: translateY(-200px);
-        -moz-transform: translateY(-200px);
-        -ms-transform: translateY(-200px);
-        -o-transform: translateY(-200px);
-        transform: translateY(-200px);
+        -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px);
+        transform: translateY(-100px);
         opacity: 0;
     }
 
@@ -215,11 +217,11 @@ h1 {
 
 @keyframes moveInBottom {
     0% {
-        -webkit-transform: translateY(200px);
-        -moz-transform: translateY(200px);
-        -ms-transform: translateY(200px);
-        -o-transform: translateY(200px);
-        transform: translateY(200px);
+        -webkit-transform: translateY(100px);
+        -moz-transform: translateY(100px);
+        -ms-transform: translateY(100px);
+        -o-transform: translateY(100px);
+        transform: translateY(100px);
         opacity: 0;
     }
 
@@ -237,6 +239,9 @@ h1 {
 
 
 /* Respondsive */
+
+
+
 /* Iphone */
 
 @media screen and (max-width: 600px) {
@@ -351,6 +356,7 @@ h1 {
 
 /* Landscape Phones */
 
+
 @media screen and (min-width: 375px) and (max-width: 812px) and (orientation: landscape) {
 
     /* Language select */
@@ -379,15 +385,16 @@ h1 {
 
     .language-container p {
         font-size: 0.7rem;
+        white-space: nowrap;
     }
 
     .language-container img {
-        width: 80px;
-
+        width: 60px;
     }
 
     .language {
         font-size: 2rem;
+        left: 55%;
     }
 
     /* Welcome page */
