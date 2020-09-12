@@ -472,3 +472,21 @@ h1 {
 
     }
 }
+
+/* 2 in 1 Laptop */
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+    h1 {
+        font-size: 12rem;
+        text-align: center;
+        letter-spacing: 20px;
+    }
+
+    .language-container img {
+        width: 65px;
+    }
+
+    .language-container p {
+        white-space: nowrap;
+    }
+
+}
